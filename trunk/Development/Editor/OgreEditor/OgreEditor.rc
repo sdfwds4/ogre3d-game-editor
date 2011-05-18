@@ -1,0 +1,727 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\OgreEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\OgreEditor.ico"
+IDR_OGREEDITORTYPE      ICON                    "res\\OgreEditorDoc.ico"
+IDI_DATABASE            ICON                    "res\\Database.ico"
+IDI_MATERIAL            ICON                    "res\\icon_meterial.ico"
+IDI_TEXTURE             ICON                    "res\\icon_texture.ico"
+IDI_SCENENODE           ICON                    "res\\icon1_scenenode.ico"
+IDI_MODEL               ICON                    "res\\icon_model.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP_ICONS        BITMAP                  "res\\PaneIcons.bmp"
+IDB_LOGO_BITMAP         BITMAP                  "res\\logo.bmp"
+IDB_IMAGELIST           BITMAP                  "res\\il_tab.bmp"
+IDR_PARTICLE            BITMAP                  "res\\mainfram.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_SELECT_MODE
+    BUTTON      ID_MOVE_MODE
+    BUTTON      ID_ROTATE_MODE
+    BUTTON      ID_SCALE_MODE
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_PARTICLE TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_SELECT_MODE
+    BUTTON      ID_MOVE_MODE
+    BUTTON      ID_ROTATE_MODE
+    BUTTON      ID_SCALE_MODE
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Customize...",               35001
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "资源浏览器",                       ID_VIEW_DATABASE
+        MENUITEM "粒子编辑器",                       ID_VIEW_PARTICLE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OgreEditor...",        ID_APP_ABOUT
+    END
+END
+
+IDR_PARTICLE_EDIT_MENU MENU 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "打开",                          ID_32775
+        MENUITEM "保存",                          ID_32776
+        MENUITEM "关闭",                          ID_32777
+        MENUITEM "退出",                          ID_32778
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于",                          ID_32779
+    END
+END
+
+IDR_PARTICLE_EDIT MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Customize...",               35001
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "资源浏览器",                       ID_VIEW_DATABASE
+        MENUITEM "粒子编辑器",                       ID_VIEW_PARTICLE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OgreEditor...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OgreEditor"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "OgreEditor Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_LOGO_DIALOG DIALOGEX 0, 0, 404, 201
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "VERSION: 0.01",IDC_STATIC,342,191,50,8
+    LTEXT           "编辑器启动中...",IDC_LOG_TEXT,13,191,223,8
+    CONTROL         134,IDC_LOGO_PIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,470,234,WS_EX_CLIENTEDGE
+END
+
+IDD_MAINTOOL_VIEW DIALOGEX 0, 0, 167, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_OBJECTS DIALOGEX 0, 0, 158, 96
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "NPC",ID_NPC,14,14,50,14
+    PUSHBUTTON      "怪物",ID_MONSTER,76,14,50,14
+    PUSHBUTTON      "特效",IDC_EFFECT,14,33,48,14
+    PUSHBUTTON      "实体",ID_ENTITY,76,33,50,14
+    PUSHBUTTON      "画刷",ID_BRUSH,14,52,47,14
+    PUSHBUTTON      "其他",ID_MISC,76,52,49,14
+END
+
+IDD_TERRAIN DIALOGEX 0, 0, 158, 96
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "修改地形",ID_MODIFY,18,14,47,15
+    PUSHBUTTON      "地表绘制",ID_PAINT,77,14,47,15
+    PUSHBUTTON      "生成地表贴图",IDC_LAYER_TEXTURE_BTN,32,66,78,14
+    PUSHBUTTON      "修改地形",ID_LIGHT,18,34,47,15
+END
+
+IDD_LAYER_PAGE DIALOGEX 0, 0, 195, 258
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,138,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,138,24,50,14
+END
+
+IDD_DISPLAY DIALOGEX 0, 0, 188, 190
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,131,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,131,24,50,14
+END
+
+IDD_LAYER DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,129,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,24,50,14
+END
+
+IDD_EFFECT_DIALOG DIALOGEX 0, 0, 186, 204
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_EFFECT_LIST,6,14,156,186,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "特效列表：",IDC_STATIC,15,3,41,8
+END
+
+IDD_INFO_BAR DIALOGEX 0, 0, 190, 42
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_BRUSH_DIALOG DIALOGEX 0, 0, 180, 229
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "画刷列表：",IDC_STATIC,16,6,41,8
+    LISTBOX         IDC_BRUSH_LIST,8,17,160,187,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_NPC_DIALOG DIALOGEX 0, 0, 187, 220
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "NPC列表:",IDC_STATIC,16,6,33,8
+    LISTBOX         IDC_NPC_LIST,12,17,159,184,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MONSTER_DIALOG DIALOGEX 0, 0, 187, 186
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "怪物列表:",IDC_STATIC,16,7,36,8
+    LISTBOX         IDC_MONSTER_LIST,9,17,166,162,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TERRAIN_MODIFY_DIALOG DIALOGEX 0, 0, 173, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "画刷类型：",IDC_STATIC,15,10,41,8
+    COMBOBOX        IDC_BRUSH_TYPE_COMBO,66,7,69,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "画刷大小：",IDC_STATIC,15,27,41,8
+    CONTROL         "",IDC_BRUSH_SCALE_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,15,38,132,16
+    LTEXT           "画刷硬度：",IDC_STATIC,17,58,41,8
+    CONTROL         "",IDC_HARDNESS_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,70,130,16
+    EDITTEXT        IDC_SCALE_EDIT,71,24,40,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HARDNESS_EDIT,71,56,40,11,ES_AUTOHSCROLL
+END
+
+IDD_TERRAIN_PAINT_DIALOG DIALOGEX 0, 0, 178, 294
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "画刷大小:",IDC_STATIC,15,38,36,8
+    CONTROL         "",IDC_BRUSH_SCALE_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,13,50,132,13
+    LTEXT           "图层列表：",IDC_STATIC,15,94,41,8
+    LTEXT           "画刷硬度:",IDC_STATIC,15,66,36,8
+    CONTROL         "",IDC_BRUSH_HARDNESS_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,11,79,132,13
+    EDITTEXT        IDC_SCALE_EDIT,60,35,43,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HARDNESS_EDIT,59,63,43,12,ES_AUTOHSCROLL
+    LTEXT           "画刷类型:",IDC_STATIC,16,13,36,8
+    COMBOBOX        IDC_BRUSH_TYPE_COMBO,59,10,63,41,CBS_DROPDOWNLIST | WS_TABSTOP
+    CONTROL         "",IDC_LAYER_TREE,"SysTreeView32",TVS_HASLINES | WS_BORDER | WS_TABSTOP,5,107,148,132
+    LTEXT           "当前选择的图层:无",IDC_LAYER_INFO,15,243,79,8
+    PUSHBUTTON      "增加图层",IDC_ADD_LAYER_BTN,13,259,54,17
+    PUSHBUTTON      "删除图层",IDC_DEL_LAYER_BTN,75,259,54,17
+END
+
+IDD_TERRAIN_ADD_LAYER_DIALOG DIALOGEX 0, 0, 262, 124
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建图层"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,57,94,50,14
+    PUSHBUTTON      "取消",IDCANCEL,144,94,50,14
+    LTEXT           "尺寸:",IDC_STATIC,30,20,20,8
+    LTEXT           "材质1:",IDC_STATIC,30,41,24,8
+    LTEXT           "材质2:",IDC_STATIC,30,66,24,8
+    EDITTEXT        IDC_SIZE_EDIT,64,17,70,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXTURE1_EDIT,62,38,178,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXTURE2_EDIT,62,63,177,14,ES_AUTOHSCROLL
+END
+
+IDD_TEXTURE_COMBINE_DIALOG DIALOGEX 0, 0, 269, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地表贴图合并工具"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,67,95,50,14
+    PUSHBUTTON      "取消",IDCANCEL,147,95,50,14
+    LTEXT           "法线贴图:",IDC_STATIC,13,58,36,8
+    LTEXT           "镜面贴图:",IDC_STATIC,13,30,36,8
+    LTEXT           "漫反射贴图:",IDC_STATIC,13,14,44,8
+    LTEXT           "位移贴图:",IDC_STATIC,13,74,36,8
+    EDITTEXT        IDC_DIFFUSE_EDIT,61,11,73,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPECULAR_EDIT,61,28,73,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NORMAL_EDIT,61,56,73,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISP_EDIT,61,72,73,12,ES_AUTOHSCROLL
+    LTEXT           "漫反射镜面合成贴图:",IDC_STATIC,151,15,76,8
+    LTEXT           "法线位移合成贴图:",IDC_STATIC,151,55,68,8
+    EDITTEXT        IDC_DIFFUSE_SPECULAR_EDIT,147,25,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NORMAL_DISP_EDIT,147,67,108,12,ES_AUTOHSCROLL
+END
+
+IDD_TERRAIN_LIGHT_DIALOG DIALOGEX 0, 0, 183, 217
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "应用",IDC_APPLY_BTN,10,192,60,15
+    PUSHBUTTON      "恢复默认",IDC_DEFUALTY_BTN,87,192,60,15
+    LTEXT           "Lightmap的方向:",IDC_STATIC,11,10,56,8
+    EDITTEXT        IDC_X_EDIT,40,22,68,13,ES_AUTOHSCROLL
+    LTEXT           "x:",IDC_STATIC,25,25,8,8
+    EDITTEXT        IDC_Y_EDIT,40,42,68,13,ES_AUTOHSCROLL
+    LTEXT           "y:",IDC_STATIC,25,45,8,8
+    EDITTEXT        IDC_Z_EDIT,40,62,68,13,ES_AUTOHSCROLL
+    LTEXT           "z:",IDC_STATIC,25,65,8,8
+END
+
+IDD_ENTITY_DIALOG DIALOGEX 0, 0, 173, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_STATUS_DIALOG DIALOGEX 0, 0, 656, 18
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "当前工具:",IDC_STATIC,11,3,36,8
+    LTEXT           "X:",IDC_STATIC,235,3,8,8
+    LTEXT           "Y:",IDC_STATIC,296,3,8,8
+    LTEXT           "Z:",IDC_STATIC,351,3,8,8
+    EDITTEXT        IDC_X_EDIT,249,3,38,10,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_Y_EDIT,305,3,38,10,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_Z_EDIT,360,3,38,10,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "无",IDC_EDITTOOL_NAME,54,3,92,8
+    LTEXT           "速度:",IDC_STATIC,420,3,20,8
+    EDITTEXT        IDC_EDIT_SPIN,446,2,32,10,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,476,2,8,10
+END
+
+IDD_RENDER_DIALOG DIALOGEX 0, 0, 362, 230
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_PARTICLE_PREVIEW DIALOGEX 0, 0, 642, 297
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Blade inc."
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "OgreEditor.exe"
+            VALUE "LegalCopyright", "TODO: (c) Blade inc..  All rights reserved."
+            VALUE "OriginalFilename", "OgreEditor.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_LAYER_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_LAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_MONSTER_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 186
+    END
+
+    IDD_TERRAIN_PAINT_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 177
+    END
+
+    IDD_TERRAIN_ADD_LAYER_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 261
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "\nOgreEditor\nOgreEditor\n\n\nOgreEditor.Document\nOgreEditor.Document"
+    IDS_RESOURCES           "资源"
+    IDS_MATERIAL            "材质"
+    IDS_MODEL               "模型"
+    IDS_TEXTURE             "贴图"
+    IDS_SCENENODE           "场景节点"
+    IDR_PARTICLE_EDIT       "\nParticleEditor\nParticleEditor\n\n\nParticleEditor.Document\nParticleEditor.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "OgreEditor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "新建场景\nNew"
+    ID_FILE_OPEN            "打开场景\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "保存场景\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "移动模式\n移动"
+    ID_EDIT_CUT             "选取模式\n选取"
+    ID_EDIT_FIND            "旋转模式\n旋转"
+    ID_EDIT_PASTE           "旋转模式\n旋转"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_PANE_OPTIONS        "Options"
+    IDR_PANE_PROPERTIES     "Properties"
+    IDR_PANE_PREVIEW        "特效预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SELECT_MODE          "选取"
+    ID_MOVE_MODE            "移动"
+    ID_ROTATE_MODE          "旋转"
+    ID_SCALE_MODE           "缩放"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(1252)
+#include "res\OgreEditor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

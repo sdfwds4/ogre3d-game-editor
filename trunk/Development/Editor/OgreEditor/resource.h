@@ -1,0 +1,124 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by OgreEditor.rc
+//
+#define IDD_ABOUTBOX                    100
+#define IDR_MAINFRAME                   128
+#define IDR_OGREEDITORTYPE              129
+#define IDS_RESOURCES                   129
+#define IDR_MAINFRAME2                  129
+#define IDR_PARTICLE                    129
+#define IDB_BITMAP_ICONS                130
+#define IDS_METERIAL                    130
+#define IDS_MATERIAL                    130
+#define IDS_MODEL                       131
+#define IDB_BITMAP1                     132
+#define IDS_TEXTURE                     132
+#define IDS_SCENENODE                   133
+#define IDB_BITMAP2                     134
+#define IDB_LOGO_BITMAP                 134
+#define IDR_PARTICLE_EDIT               134
+#define IDD_DIALOG1                     135
+#define IDD_LOGO_DIALOG                 135
+#define IDD_MAINTOOL_VIEW               137
+#define IDD_OBJECTS                     138
+#define IDD_TERRAIN                     139
+#define IDD_LAYER_PAGE                  141
+#define IDB_IMAGELIST                   142
+#define IDD_DISPLAY                     143
+#define IDD_LAYER                       144
+#define IDD_EFFECT_DIALOG               145
+#define IDD_INFO_BAR                    146
+#define IDI_DATABASE                    147
+#define IDI_MATERIAL                    148
+#define IDI_TEXTURE                     149
+#define IDI_SCENENODE                   150
+#define IDI_MODEL                       151
+#define IDD_BRUSH_DIALOG                152
+#define IDD_NPC_DIALOG                  153
+#define IDD_MONSTER_DIALOG              154
+#define IDD_TERRAIN_MODIFY_DIALOG       155
+#define IDD_TERRAIN_PAINT_DIALOG        156
+#define IDD_TERRAIN_ADD_LAYER_DIALOG    157
+#define IDD_DIALOG2                     158
+#define IDD_TEXTURE_COMBINE_DIALOG      158
+#define IDD_TERRAIN_LIGHT_DIALOG        159
+#define IDD_ENTITY_DIALOG               160
+#define IDD_STATUS_DIALOG               161
+#define IDR_MENU1                       162
+#define IDR_PARTICLE_EDIT_MENU          162
+#define IDD_RENDER_DIALOG               163
+#define IDD_PARTICLE_PREVIEW            164
+#define IDC_LOGO_PIC                    1000
+#define IDC_LOG_TEXT                    1001
+#define ID_NPC                          1002
+#define ID_MONSTER                      1003
+#define IDC_EFFECT                      1004
+#define ID_ENTITY                       1005
+#define ID_BRUSH                        1006
+#define IDC_EFFECT_LIST                 1006
+#define ID_MISC                         1007
+#define IDC_BRUSH_LIST                  1007
+#define IDC_LIST1                       1008
+#define IDC_NPC_LIST                    1008
+#define IDC_MONSTER_LIST                1008
+#define IDC_TREE_CTRL                   1009
+#define IDC_BRUSH_TYPE_COMBO            1009
+#define IDC_CAPT_BUTTON                 1010
+#define ID_MODIFY                       1010
+#define ID_PAINT                        1011
+#define IDC_BRUSH_SCALE_SLIDER          1011
+#define IDC_HARDNESS_SLIDER             1012
+#define IDC_BRUSH_HARDNESS_SLIDER       1012
+#define ID_LIGHT                        1012
+#define IDC_SCALE_EDIT                  1013
+#define IDC_HARDNESS_EDIT               1014
+#define IDC_LAYER_TREE                  1016
+#define IDC_LAYER_INFO                  1017
+#define IDC_ADD_LAYER_BTN               1018
+#define IDC_DEL_LAYER_BTN               1019
+#define IDC_SIZE_EDIT                   1019
+#define IDC_TEXTURE1_EDIT               1020
+#define IDC_LAYER_TEXTURE_BTN           1020
+#define IDC_TEXTURE2_EDIT               1021
+#define IDC_DIFFUSE_EDIT                1021
+#define IDC_SPECULAR_EDIT               1022
+#define IDC_NORMAL_EDIT                 1023
+#define IDC_DISP_EDIT                   1024
+#define IDC_DIFFUSE_SPECULAR_EDIT       1025
+#define IDC_NORMAL_DISP_EDIT            1026
+#define IDC_APPLY_BTN                   1027
+#define IDC_DEFUALTY_BTN                1028
+#define IDC_X_EDIT                      1029
+#define IDC_Y_EDIT                      1030
+#define IDC_Z_EDIT                      1031
+#define IDC_EDITTOOL_NAME               1033
+#define IDC_EDIT_SPIN                   1034
+#define IDC_SPIN                        1035
+#define IDR_PANE_OPTIONS                4000
+#define IDR_PANE_PROPERTIES             4001
+#define IDR_PANE_PREVIEW                4002
+#define ID_SELECT_MODE                  32771
+#define ID_MOVE_MODE                    32772
+#define ID_ROTATE_MODE                  32773
+#define ID_SCALE_MODE                   32774
+#define ID_32775                        32775
+#define ID_32776                        32776
+#define ID_32777                        32777
+#define ID_32778                        32778
+#define ID_32779                        32779
+#define ID_VIEW_32780                   32780
+#define ID_VIEW_DATABASE                32781
+#define ID_VIEW_32782                   32782
+#define ID_VIEW_PARTICLE                32783
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        165
+#define _APS_NEXT_COMMAND_VALUE         32784
+#define _APS_NEXT_CONTROL_VALUE         1037
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif
