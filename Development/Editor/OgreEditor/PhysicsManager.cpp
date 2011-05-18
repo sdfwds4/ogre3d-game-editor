@@ -194,7 +194,8 @@ void CPhysicsManager::Update()
 
 		// Step the visual debugger. We first synchronize the timer data
 		context->syncTimers( threadPool );
-		vdb->step();
+		hkReal timeInMs = now_time - last_time;
+		vdb->step(timeInMs);
 
 		last_time = now_time;
 	}
@@ -224,7 +225,7 @@ void CPhysicsManager::SetHeightfieldData()
 		hkpSampledHeightFieldBaseCinfo ci;
 		ci.m_xRes = xRes;
 		ci.m_zRes = zRes;
-		hkReal scale = pTerrain->getWorldSize() /(pTerrain->getSize() - 1);
+		hkReal scale = pTerrain->getWorldSize() /pTerrain->getSize();
 		ci.m_scale = hkVector4( scale, 1.0f, scale );
 
 		MySampledHeightFieldShape* heightFieldShape = new MySampledHeightFieldShape( ci , m_heightData);
