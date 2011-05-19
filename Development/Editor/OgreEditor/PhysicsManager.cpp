@@ -194,8 +194,7 @@ void CPhysicsManager::Update()
 
 		// Step the visual debugger. We first synchronize the timer data
 		context->syncTimers( threadPool );
-		hkReal timeInMs = now_time - last_time;
-		vdb->step(timeInMs);
+		vdb->step(16);
 
 		last_time = now_time;
 	}
@@ -216,7 +215,7 @@ void CPhysicsManager::SetHeightfieldData()
 			for (int z = 0; z < zRes; z++)
 			{
 				// Convert to 16 bit 
-				m_heightData[x*zRes + z] = static_cast<hkUint16> ( pTerrain->getHeightAtPoint( x, zRes - z ) );
+				m_heightData[x*zRes + z] = static_cast<hkUint16> ( pTerrain->getHeightAtPoint( x, zRes - (z + 1) ) );
 			}
 		}
 	}

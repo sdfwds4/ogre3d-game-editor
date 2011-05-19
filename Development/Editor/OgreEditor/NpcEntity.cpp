@@ -276,7 +276,7 @@ void CNpc::updatePhysics(Ogre::Real deltaTime)
 	{
 		// calculate actually goal direction in world based on player's key directions
 		Vector3 goalPos = mGoalPosition;
-		Vector3 pos = hkVector4ToOgre( m_characterProxy->getPosition() );
+		Vector3 pos = mBodyNode->getPosition();
 		goalPos -= pos;
 		Real distance;
 		distance = goalPos.normalise();
