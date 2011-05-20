@@ -262,7 +262,6 @@ void CNpc::updatePhysics(Ogre::Real deltaTime)
 	hkVector4 up;
 	up.setNeg4( m_world->getGravity() );
 	up.normalize3();
-	hkQuaternion orient;
 
 	m_world->lock();
 
@@ -271,6 +270,12 @@ void CNpc::updatePhysics(Ogre::Real deltaTime)
 
 	input.m_inputLR = 0.0f;
 	input.m_inputUD = 0.0f;
+
+	input.m_wantJump = false;
+	input.m_atLadder = m_listener->m_atLadder;
+
+	input.m_up = up;
+	input.m_forward.set(1,0,0);
 
 	if ( mGoalPosition != Vector3::ZERO )
 	{
@@ -297,24 +302,15 @@ void CNpc::updatePhysics(Ogre::Real deltaTime)
 		else if (yawToGoal > 0) 
 			yawToGoal = std::max<Real>(0, std::min<Real>(yawToGoal, yawAtSpeed)); 
 
-		m_currentAngle += yawToGoal;
-		orient.setAxisAngle(up, m_currentAngle);
-
 		if (distance > 0.0f)
 		{
-			input.m_inputLR = 0.0f;
 			input.m_inputUD = 1.0f;
+			input.m_forward.setNeg4( OgreTohkVector4(goalPos) );
+			input.m_forward.normalize3();
 		}
 	}
 
 	{
-		input.m_wantJump = false;
-		input.m_atLadder = m_listener->m_atLadder;
-
-		input.m_up = up;
-		input.m_forward.set(1,0,0);
-		input.m_forward.setRotatedDir( orient, input.m_forward );
-
 		input.m_stepInfo.m_deltaTime = m_timestep;
 		input.m_stepInfo.m_invDeltaTime = 1.0f / m_timestep;
 		input.m_characterGravity.set(0,-16,0);
@@ -382,7 +378,7 @@ void CNpc::updateBody(Real deltaTime)
 
 		mBodyNode->yaw(Degree(yawToGoal));
 
-		if (distance <= 3.0f)
+		if (distance <= 1.0f)
 		{
 			mGoalPosition = Vector3::ZERO;
 
@@ -414,7 +410,6 @@ void CNpc::updateBody(Real deltaTime)
 	{
 		hkVector4 pos = m_characterProxy->getPosition();
 		Ogre::Vector3 position = hkVector4ToOgre(pos);
-		position.y += 1.0f;
 		mBodyNode->setPosition(position);
 		mShadowDecal.setPosition( position.x, position.z );
 	}
@@ -542,10 +537,10 @@ void CNpc::CreateCharacterProxy()
 		// Construct a shape
 
 		hkVector4 top(0, CHAR_HEIGHT, 0);
-		hkVector4 bottom(0, 0, 0);		
+		hkVector4 bottom(0, 0, 0);
 
 		// Create a capsule to represent the character standing
-		m_standShape = new hkpCapsuleShape(top, bottom, 4.0f);
+		m_standShape = new hkpCapsuleShape(top, bottom, 4.5f);
 
 		// Construct a Shape Phantom
 		m_phantom = new hkpSimpleShapePhantom( m_standShape, hkTransform::getIdentity() );
@@ -603,9 +598,6 @@ void CNpc::CreateCharacterProxy()
 	}
 
 	m_world->unlock();
-
-	// Current camera angle about up
-	m_currentAngle = HK_REAL_PI * 0.5f;
 }
 
 void CNpc::DestroyCharacterProxy()
