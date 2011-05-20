@@ -83,8 +83,6 @@ protected:
 
 	hkpCharacterContext* m_characterContext;
 
-	hkReal m_currentAngle;
-
 	hkpShapePhantom* m_phantom;
 
 	hkpShape* m_standShape;
