@@ -1,0 +1,1 @@
+ogre3d-editor is the first development platform for online, MMO and Next-Gen game development.,base on Ogre3d,havok and Fmod. It provides the complete game Editor to create AAA quality next generation games, and includes the All in one level editor, a Powerful, Like CryENGINE® 3 Sandbox "What you see is what you play" (WYSIWYP) - tool designed by and for professional developers.
